@@ -116,8 +116,11 @@ CheckForUpdates()
 	FileDelete, Version.txt
 	If(currVersion>versionNumber)
 	{
-		Msgbox, 4, Searchy: Update, Version %currVersion% of Searchy is available! Do you want to download it?
 		IfMsgBox, Yes
-			Run, "%PathToBrowser%" "http://github.com/ralebaskinson/Searchy/zipball/v%currVersion%"
+		{
+			If(PathToBrowser="")
+				Run, "http://github.com/downloads/ralebaskinson/Searchy/v%currVersion%.zip"
+			Else Run, "%PathToBrowser%" "http://github.com/downloads/ralebaskinson/Searchy/v%currVersion%.zip"
+		}
 	}
 }
