@@ -111,7 +111,7 @@ Startup()
 CheckForUpdates()
 {
 	global versionNumber
-	URLDownloadToFile, http://github.com/ralebaskinson/searchy/raw/master/Version.txt, Version.txt
+	URLDownloadToFile, http://github.com/ralebaskinson/Searchy/raw/master/Version.txt, Version.txt
 	FileReadLine, currVersion, Version.txt, 1
 	FileDelete, Version.txt
 	If(currVersion>versionNumber)
