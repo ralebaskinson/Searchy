@@ -73,7 +73,7 @@ SubmitInput()
 							input=%usrin%
 							AddInput()
 						}
-						Else addingInput=0
+						addingInput=0
 					}
 					Break
 				}

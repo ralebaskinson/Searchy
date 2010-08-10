@@ -60,7 +60,6 @@ AddInput()
 		}
 		num++
 	}
-	addingInput=0
 }
 
 ShiftOneUp(num)
