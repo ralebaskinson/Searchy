@@ -111,10 +111,10 @@ Startup()
 CheckForUpdates()
 {
 	global versionNumber
-	URLDownloadToFile, http://github.com/ralebaskinson/Searchy/raw/master/Version.txt, Version.txt
-	FileReadLine, currVersion, Version.txt, 1
-	FileDelete, Version.txt
-	If(currVersion>versionNumber)
+	URLDownloadToFile, http://github.com/ralebaskinson/Searchy/raw/master/Version.txt, LatestVersion.txt
+	FileReadLine, latestVersion, LatestVersion.txt, 1
+	FileDelete, LatestVersion.txt
+	If(latestVersion>versionNumber)
 	{
 		IfMsgBox, Yes
 		{

@@ -320,6 +320,7 @@ Return
 
 2ButtonOK:
 Gui, Destroy
+FileDelete, config.ini.backup ; Delete the backup file
 Return
 
 2Button+:
