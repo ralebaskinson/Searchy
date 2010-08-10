@@ -119,8 +119,8 @@ CheckForUpdates()
 		IfMsgBox, Yes
 		{
 			If(PathToBrowser="")
-				Run, "http://github.com/downloads/ralebaskinson/Searchy/v%currVersion%.zip"
-			Else Run, "%PathToBrowser%" "http://github.com/downloads/ralebaskinson/Searchy/v%currVersion%.zip"
+				Run, "http://github.com/downloads/ralebaskinson/Searchy/v%latestVersion%.zip"
+			Else Run, "%PathToBrowser%" "http://github.com/downloads/ralebaskinson/Searchy/v%latestVersion%.zip"
 		}
 	}
 }
